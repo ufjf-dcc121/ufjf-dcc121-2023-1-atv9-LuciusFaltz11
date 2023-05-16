@@ -14,7 +14,7 @@
         <form action="">
             <input type="text" name="nome"/>
             <input type="text" name="sobrenome"/>
-            <input type="text" name="idade"/>
+            <input type="number" name="idade"/>
             <input type="submit" />
             <input type="reset" />
         </form>
@@ -26,6 +26,11 @@
         function enviarInformacoes(e){
             e.preventDefault();
             console.log("Enviado :)");
+            const nome = form.nome.value;
+            const sobrenome = form.sobrenome.value;
+            const idade = form.idade.valueAsNumber;
+            const nomeCompleto = `${nome} ${sobrenome}, ${idade} anos`;
+            console.log(nomeCompleto);
         }
     </script>
 </body>
