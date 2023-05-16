@@ -15,9 +15,18 @@
             <input type="text" name="nome"/>
             <input type="text" name="sobrenome"/>
             <input type="text" name="idade"/>
-            <input type="submit" >
-            <input type="reset" >
+            <input type="submit" />
+            <input type="reset" />
         </form>
     </main>
+    <script>
+        const form = document.querySelector("form");
+        form.addEventListener("submit", enviarInformacoes);
+
+        function enviarInformacoes(e){
+            e.preventDefault();
+            console.log("Enviado :)");
+        }
+    </script>
 </body>
 </html>
