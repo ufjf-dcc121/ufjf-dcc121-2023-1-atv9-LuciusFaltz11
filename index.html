@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 9 - Lucius Faltz</title>
     <style>
-        p > span{
+        .pessoa > div{
+            display: inline;
+        }
+        .nome{
             color:crimson;
+        }
+        .sobrenome{
+            color: darkslategrey;
+        }
+        .sobrenome::before{
+            content: ' ';
+        }
+        .idade{
+            color: slateblue;
+        }
+        .idade::before{
+            content: ', ';
+        }
+        .idade::after{
+            content: ' anos';
         }
     </style>
 </head>
@@ -23,7 +41,6 @@
             <input type="submit" />
             <input type="reset" />
         </form>
-        <br />
         <p></p>
         <h2>Visitas Passadas:</h2>
         <ol></ol>
